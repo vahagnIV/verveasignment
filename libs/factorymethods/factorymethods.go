@@ -14,7 +14,7 @@ import (
 )
 
 const ServerUpdateUrl string = "http://127.0.0.1:3333/updateDatabase/"
-const DatabasePath string = "/home/vahagn/GolandProjects/verveTest/data/db/"
+const DatabasePath string = "./data/db/"
 const shardCount uint16 = 100
 
 func GetDatabaseFileTemplateFromTimestamp(timestamp string) string {
