@@ -2,13 +2,14 @@ package datarepository
 
 import "time"
 
-type MyObject struct {
+type DataRow struct {
 	Id             string `gorm: "primaryKey"`
 	Price          float64
 	ExpirationDate time.Time
 }
 
 type Repo interface {
-	get(id string) MyObject
-	add(object MyObject)
+	Get(id string) DataRow
+	Add(object DataRow)
+	BatchInsert(object []DataRow)
 }

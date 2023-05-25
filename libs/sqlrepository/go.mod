@@ -1,6 +1,8 @@
-module verveTest
+module someurl.com/sqlrepository
 
 go 1.20
+
+replace someurl.com/datarepository => ../datarepository
 
 require (
 	gorm.io/driver/sqlite v1.5.1
@@ -12,7 +14,4 @@ require (
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.5 // indirect
 	github.com/mattn/go-sqlite3 v1.14.16 // indirect
-
 )
-
-replace someurl.com/datarepository => ../libs/datarepository
